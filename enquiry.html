@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enquiry / Pre-order — Mocha & Crumb Café</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Mocha & Crumb Café logo" class="logo">
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Pre-order / Enquiry</h1>
+
+    <p>Please complete the form below to pre-order or ask a question. Fields marked with <strong>*</strong> are required.</p>
+
+    <form id="enquiryForm" class="form" novalidate>
+      <label for="name">Full name <strong>*</strong></label>
+      <input id="name" name="name" type="text" required autocomplete="name" />
+
+      <label for="email">Email <strong>*</strong></label>
+      <input id="email" name="email" type="email" required autocomplete="email" />
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" placeholder="+27 82 123 4567" pattern="[0-9+()\s-]{7,20}" />
+
+      <label for="pickupDate">Preferred pickup date (optional)</label>
+      <input id="pickupDate" name="pickupDate" type="date" />
+
+      <label for="item">Order item (optional)</label>
+      <select id="item" name="item">
+        <option value="">-- Select item --</option>
+        <option value="espresso">Espresso</option>
+        <option value="latte">Vanilla Latte</option>
+        <option value="cappuccino">Cappuccino</option>
+        <option value="cake_slice">Chocolate Cake Slice</option>
+        <option value="blueberry_muffin">Blueberry Muffin</option>
+      </select>
+
+      <label for="details">Order details / Enquiry <strong>*</strong></label>
+      <textarea id="details" name="details" rows="5" required></textarea>
+
+      <label for="attachment">Attach reference image (optional)</label>
+      <input id="attachment" name="attachment" type="file" accept="image/*" />
+
+      <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+
+    <div id="enquiryResult" role="status" aria-live="polite" class="result"></div>
+
+    <p class="small-note">Note: This is a student project demo — submissions are simulated and will not be actually sent to a server.</p>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Mocha & Crumb Café</h4>
+        <p>123 Campus Road, Saselamani</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@mochacrumble.co.za</p>
+        <p>Tel: 012 345 6789</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Mocha & Crumb Café</p>
+  </footer>
+</body>
+</html>
