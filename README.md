@@ -97,3 +97,35 @@ Images used were captured or sourced as permitted for educational use.
 No external frameworks were used.
 General HTML and CSS references:
 MDN Web Docs. (2024). HTML and CSS Documentation. https://developer.mozilla.org
+
+
+## Part 3 – Search Engine Optimisation (SEO) & Form Validation
+
+### 3.1 On-Page SEO
+• Title tags and meta descriptions have been added to every HTML page.  
+• Header tags (H1, H2) are used to structure content.  
+• Image optimisation: descriptive filenames and alt attributes used for all images.  
+• Clean URL structure and internal linking (index.html, about.html, menu.html, enquiry.html, contact.html).  
+• Mobile-friendly responsive design implemented (media queries).
+
+### 3.2 Off-Page SEO
+• Backlinks: recommended outreach to local blogs, campus groups, and online directories.  
+• Social Media: recommend Instagram and Facebook with links to menu and contact pages.  
+• Local SEO: add NAP (Name, Address, Phone) consistency and Google Business Profile.
+
+### 3.3 Additional Requests
+• robots.txt included at project root.  
+• sitemap.xml included at project root.  
+• Page speed: images compressed, CSS consolidated. (Further server-side caching recommended when hosted.)  
+• Security: use HTTPS when hosted; validate server-side when adding backend.
+
+### 4. Form Functionality and Validation
+• enquiry.html and contact.html include HTML forms with required fields.  
+• Client-side validation implemented by js/form-validate.js (email, basic phone, name and message checks).  
+• Error messages and success notification included.  
+• AJAX submission can be added if backend endpoint is available.
+
+### 5. GitHub & Submission
+• All changes committed with descriptive messages.  
+• README updated to include Part 3 content.  
+• Changelog entry added to the README documenting edits from Part 2 to Part 3.

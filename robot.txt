@@ -1,0 +1,28 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://github.com/Paseka22/Mocha-Crumb-Cafe/raw/main/sitemap.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>http://127.0.0.1:5500/index.html</loc>
+  <priority>1.00</priority>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:5500/about.html</loc>
+  <priority>0.80</priority>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:5500/menu.html</loc>
+  <priority>0.80</priority>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:5500/enquiry.html</loc>
+  <priority>0.64</priority>
+ </url>
+ <url>
+  <loc>http://127.0.0.1:5500/contact.html</loc>
+  <priority>0.64</priority>
+ </url>
+</urlset>
