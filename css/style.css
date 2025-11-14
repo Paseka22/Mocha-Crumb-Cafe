@@ -1,0 +1,129 @@
+/* ---------------------------
+  Mocha & Crumb — Simple PoE CSS (final)
+----------------------------*/
+
+/* Variables */
+:root{
+  --bg: #ffffff;
+  --page: #fbfaf8;
+  --accent: #4B2C20;
+  --muted: #6b6b6b;
+  --accent-2: #B97A56;
+  --container: 1100px;
+  --gap: 18px;
+  --radius: 8px;
+  --max-read: 74ch;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;
+  background:var(--page);
+  color:var(--accent);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-bottom:40px;
+}
+
+/* Page container */
+.container{max-width:var(--container);margin:0 auto;padding:28px 20px}
+
+/* Header, brand and nav layout */
+.header-row{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--accent)}
+.brand .logo{height:56px;width:auto;display:block}
+.brand h1{margin:0;font-size:20px}
+.brand p{margin:0;font-size:12px;color:var(--muted)}
+
+/* Nav (desktop) */
+.nav-list{list-style:none;display:flex;gap:14px;margin:0;padding:0;align-items:center}
+.nav-list a{text-decoration:none;color:var(--accent);padding:8px 10px;border-radius:6px;font-weight:600}
+.nav-list a:hover,.nav-list a.active{background:transparent;border-bottom:3px solid var(--accent-2);color:var(--accent-2)}
+.nav-list a:focus{outline:3px solid rgba(185,122,86,0.18);outline-offset:3px;border-radius:6px}
+
+/* Hamburger toggle (hidden on desktop) */
+.nav-toggle{display:none;align-items:center;justify-content:center;width:44px;height:36px;background:transparent;border:1px solid rgba(0,0,0,0.06);border-radius:6px;cursor:pointer}
+.nav-toggle:focus{outline:3px solid rgba(185,122,86,0.18);outline-offset:3px}
+.hamburger{display:block;width:22px;height:2px;background:var(--accent);position:relative}
+.hamburger::before,.hamburger::after{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--accent)}
+.hamburger::before{top:-7px}.hamburger::after{top:7px}
+
+/* Hero */
+.hero{padding:18px 0 28px}
+.hero .title{font-size:28px;font-weight:700;margin-top:12px}
+.hero p.lead{max-width:var(--max-read);color:var(--muted);margin-top:8px;font-size:16px}
+
+/* Buttons */
+.btn{display:inline-block;padding:9px 14px;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;margin-top:12px}
+.btn.secondary{background:transparent;border:1px solid rgba(75,44,32,0.08);color:var(--accent)}
+
+/* Section headings */
+.section-title{font-size:20px;margin-top:22px;color:var(--accent);font-weight:700}
+
+/* Menu list */
+.menu-list{list-style:none;padding-left:0;margin-top:12px;display:block}
+.menu-item{background:#fff;border-radius:8px;padding:14px;margin-bottom:12px;box-shadow:0 6px 12px rgba(11,10,9,0.03);display:flex;gap:14px;align-items:center}
+.menu-item img{width:96px;height:72px;object-fit:cover;border-radius:6px}
+.menu-item .meta{flex:1}
+.menu-item h3{margin-bottom:6px;font-size:18px;color:var(--accent)}
+.menu-item p.desc{color:var(--muted);font-size:14px}
+.menu-item .price{font-weight:700;color:var(--accent-2)}
+
+/* Article / content blocks */
+.article{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 12px rgba(11,10,9,0.03);max-width:var(--max-read)}
+.article p{color:var(--muted);margin-top:8px}
+
+/* Form styling */
+form label{display:block;color:var(--accent);font-weight:600;margin-top:8px}
+input[type="text"],input[type="email"],textarea,select{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(0,0,0,0.08);margin-top:6px;font-size:14px}
+textarea{min-height:110px}
+input:focus,textarea:focus,select:focus{outline:3px solid rgba(185,122,86,0.12);outline-offset:2px}
+
+/* Footer */
+footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(0,0,0,0.04);color:var(--muted);font-size:14px}
+
+/* Mobile styles: menu becomes a stacked panel with accessible toggle */
+@media (max-width:767px){
+  .nav-toggle{display:inline-flex}
+  .nav-list{position:absolute;left:12px;right:12px;top:78px;background:#fff;border-radius:8px;box-shadow:0 12px 28px rgba(0,0,0,0.12);padding:12px;display:block;z-index:1000}
+  .nav-list[hidden]{display:none}
+  .nav-list li{margin:8px 0}
+  .nav-list a{display:block;padding:8px;border-radius:6px}
+  .header-row{align-items:center}
+  .brand .logo{height:48px}
+  .hero .title{font-size:22px}
+  .menu-item{flex-direction:column;align-items:flex-start}
+  .menu-item img{width:100%;height:170px}
+  .container{padding:18px}
+}
+
+/* Tablet specific (768px — 992px) */
+@media (min-width:768px) and (max-width:992px){
+  :root{--container:900px;--gap:16px}
+  header{padding:16px 0}
+  .brand{gap:10px}
+  .brand .logo{height:52px}
+  .brand h1{font-size:24px}
+  .nav-list{gap:12px}
+  .nav-list a{padding:8px 10px;font-size:15px}
+  .hero .title{font-size:26px}
+  .hero p.lead{font-size:15px;max-width:62ch}
+  /* menu: 2-column grid */
+  .menu-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .menu-item{padding:12px;align-items:flex-start}
+  .menu-item img{width:120px;height:88px;flex-shrink:0}
+  .menu-item .meta{padding-right:8px}
+  .article{padding:18px}
+}
+
+/* Larger tablet tweaks */
+@media (min-width:993px) and (max-width:1100px){
+  .container{padding-left:22px;padding-right:22px}
+  .brand h1{font-size:26px}
+  .menu-list{grid-template-columns:1fr 1fr;gap:18px}
+}
+/* ---------------------------
+  End of Mocha & Crumb CSS

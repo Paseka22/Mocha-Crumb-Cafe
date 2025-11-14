@@ -1,103 +1,115 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Menu — Mocha & Crumb Café</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <img src="images/logo.png" alt="Mocha & Crumb Café logo" class="logo">
-      </a>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="menu.html" class="active">Menu</a></li>
-          <li><a href="enquiry.html">Enquiry</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<main class="container">
+  <h2 class="section-title">Our Menu</h2>
 
-  <main class="container">
-    <h1>Menu</h1>
+  <ul class="menu-list">
 
-    <section class="menu-section">
-      <h2>Coffees</h2>
-      <ul class="menu-list">
-        <li>
-          <strong>Espresso</strong> — Single shot. <span class="price">R18</span>
-          <p class="desc">Rich and concentrated. Perfect for a quick strong cup.</p>
-        </li>
-
-        <li>
-          <strong>Americano</strong> — Espresso with hot water. <span class="price">R22</span>
-          <p class="desc">Smooth and longer cup, great black or with a dash of milk.</p>
-        </li>
-
-        <li>
-          <strong>Cappuccino</strong> — Espresso, steamed milk, foam. <span class="price">R28</span>
-          <p class="desc">Balanced coffee-to-milk ratio with a velvety foam top.</p>
-        </li>
-
-        <li>
-          <strong>Flat White</strong> — Espresso with thin layer of microfoam. <span class="price">R30</span>
-          <p class="desc">Creamy and strong — a favourite for espresso lovers.</p>
-        </li>
-
-        <li>
-          <strong>Vanilla Latte</strong> — Latte with vanilla syrup. <span class="price">R32</span>
-          <p class="desc">Sweet and smooth. Option: ask for dairy-free milk.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section">
-      <h2>Scones & Muffins</h2>
-      <ul class="menu-list">
-        <li>
-          <strong>Blueberry Muffin</strong> — Soft and fruity. <span class="price">R20</span>
-        </li>
-        <li>
-          <strong>Banana Nut Muffin</strong> — With walnuts. <span class="price">R20</span>
-        </li>
-        <li>
-          <strong>Cheese Scone</strong> — Savoury and warm. <span class="price">R18</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section">
-      <h2>Other Items</h2>
-      <ul class="menu-list">
-        <li><strong>Croissant</strong> — Butter croissant. <span class="price">R22</span></li>
-        <li><strong>Chicken Wrap</strong> — Grilled chicken, salad, sauce. <span class="price">R45</span></li>
-        <li><strong>Beef Stew & Pap (Weekend special)</strong> — Hearty plate. <span class="price">R65</span></li>
-        <li><strong>Chocolate Cake Slice</strong> — Rich dark chocolate. <span class="price">R30</span></li>
-      </ul>
-    </section>
-
-    <p class="menu-note">All prices are in South African Rand (R). Allergens: ask staff about nuts, dairy, and gluten.</p>
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <h4>Mocha & Crumb Café</h4>
-        <p>123 Campus Road, Saselamani</p>
+    <li class="menu-item">
+      <img src="images/Americano.jpg" alt="Americano coffee">
+      <div class="meta">
+        <h3>Americano</h3>
+        <p class="desc">Hot espresso diluted with water.</p>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Email: info@mochacrumble.co.za</p>
-        <p>Tel: 012 345 6789</p>
+      <div class="price">R20</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Cappuccino.jpg" alt="Cappuccino coffee">
+      <div class="meta">
+        <h3>Cappuccino</h3>
+        <p class="desc">A rich blend of espresso and steamed foam.</p>
       </div>
-    </div>
-    <p class="copyright">© 2025 Mocha & Crumb Café</p>
-  </footer>
-</body>
-</html>
+      <div class="price">R28</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Flat White.jpg" alt="Flat white coffee">
+      <div class="meta">
+        <h3>Flat White</h3>
+        <p class="desc">Smooth velvety milk with espresso.</p>
+      </div>
+      <div class="price">R30</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Latte.jpg" alt="Latte coffee">
+      <div class="meta">
+        <h3>Latte</h3>
+        <p class="desc">Creamy steamed milk with espresso.</p>
+      </div>
+      <div class="price">R32</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Mocha.jpg" alt="Mocha coffee">
+      <div class="meta">
+        <h3>Mocha</h3>
+        <p class="desc">Chocolate + espresso + steamed milk.</p>
+      </div>
+      <div class="price">R35</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Banana nut muffin jpg.jpg" alt="Banana nut muffin">
+      <div class="meta">
+        <h3>Banana Nut Muffin</h3>
+        <p class="desc">Freshly baked, soft and sweet.</p>
+      </div>
+      <div class="price">R18</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Blueberry Muffin jpg.jpg" alt="Blueberry muffin">
+      <div class="meta">
+        <h3>Blueberry Muffin</h3>
+        <p class="desc">Bursting with real blueberries.</p>
+      </div>
+      <div class="price">R20</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Croissant jpg.jpg" alt="Butter croissant">
+      <div class="meta">
+        <h3>Croissant</h3>
+        <p class="desc">Flaky French buttery pastry.</p>
+      </div>
+      <div class="price">R16</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Cheese scone jpg.jpg" alt="Cheese scone">
+      <div class="meta">
+        <h3>Cheese Scone</h3>
+        <p class="desc">Savory freshly baked scone.</p>
+      </div>
+      <div class="price">R12</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Chocolate Cake a Slice.jpg" alt="Chocolate cake slice">
+      <div class="meta">
+        <h3>Chocolate Cake Slice</h3>
+        <p class="desc">Moist chocolate cake with frosting.</p>
+      </div>
+      <div class="price">R22</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Chicken Wrap jpg.jpg" alt="Chicken wrap">
+      <div class="meta">
+        <h3>Chicken Wrap</h3>
+        <p class="desc">Grilled chicken with salad and sauce.</p>
+      </div>
+      <div class="price">R45</div>
+    </li>
+
+    <li class="menu-item">
+      <img src="images/Beef Stew & Pap.jpg" alt="Beef stew and pap">
+      <div class="meta">
+        <h3>Beef Stew & Pap</h3>
+        <p class="desc">Homestyle beef stew served with pap.</p>
+      </div>
+      <div class="price">R40</div>
+    </li>
+
+  </ul>
+</main>

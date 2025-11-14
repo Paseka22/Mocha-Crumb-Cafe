@@ -8,23 +8,27 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <img src="images/logo.png" alt="Mocha & Crumb Café logo" class="logo">
-      </a>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="enquiry.html" class="active">Enquiry</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="Mocha & Crumb">
+      <img src="images/logo .jpg" alt="Mocha & Crumb Café logo" class="logo">
+      <div>
+        <h1>Mocha & Crumb</h1>
+        <p>Café · Fresh & Homemade</p>
+      </div>
+    </a>
 
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <main class="container">
     <h1>Pre-order / Enquiry</h1>
 
@@ -65,6 +69,38 @@
     <div id="enquiryResult" role="status" aria-live="polite" class="result"></div>
 
     <p class="small-note">Note: This is a student project demo — submissions are simulated and will not be actually sent to a server.</p>
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="title">Mocha & Crumb Café</div>
+      <p class="lead">Freshly brewed coffee, homemade cakes and warm vibes — your cosy spot near campus.</p>
+      <a class="btn" href="menu.html">See full menu</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Popular on the menu</h2>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <img src="images/espresso.svg" alt="Espresso">
+        <div class="meta">
+          <h3>Espresso</h3>
+          <p class="desc">Single shot of concentrated coffee.</p>
+        </div>
+        <div class="price">R18</div>
+      </li>
+
+      <li class="menu-item">
+        <img src="images/latte.jpg" alt="Vanilla Latte">
+        <div class="meta">
+          <h3>Vanilla Latte</h3>
+          <p class="desc">Smooth steamed milk with vanilla syrup.</p>
+        </div>
+        <div class="price">R32</div>
+      </li>
+    </ul>
+  </section>
+</main>
   </main>
 
   <footer>
@@ -81,5 +117,6 @@
     </div>
     <p class="copyright">© 2025 Mocha & Crumb Café</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
